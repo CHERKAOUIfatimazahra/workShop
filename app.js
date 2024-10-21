@@ -2,6 +2,9 @@ const express = require("express");
 const fs = require("fs");
 const app = express();
 
+// Configuration de la vue
+app.set("views", __dirname + "/views");
+
 // Configuration d'EJS comme moteur de templates
 app.set("view engine", "ejs");
 
